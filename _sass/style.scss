@@ -7,19 +7,19 @@
 
 html, body {
     height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 body {
         font-family: $base-font-family;
-        margin: 0 auto;
+        margin: 0;
         padding: 0;
-        text-align: center;
         line-height: $base-line-height;
         font-size: $base-font-size;
         color: $text-color;
-        padding: 2em 1em;
+        padding: 1em 1em;
         text-rendering: optimizeLegibility;
-        height: 75%;
     @include media-query($on-palm) {
         max-width: 100%;
         padding: 1em;
@@ -29,7 +29,7 @@ body {
 
     h1,h2,h3,h4,h5,h6 {
          font-family: "Lato", "Helvetica Neue", Helvetica, sans-serif;
-         font-weight: bold;
+         font-weight: normal;
          line-height: 1.8;
          margin: 0;
          text-transform: capitalize;
@@ -45,7 +45,7 @@ a {
 }
 
 .container {
-  max-width: 70%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -100,70 +100,65 @@ blockquote {
 
 
 .headline {
+  text-align: right;
   font-size: 3em;
-  font-family: $secondary-font-family;
-  text-align: center;
-  padding-bottom: 5px;
+  font-family: $base-font-family;
+  padding: 0px 50px 20px 0px;
       @include media-query($on-palm) {
           font-size: 2em;
   }
 }
 
-#welcome_link1{
-    display:block;
-    width:500px;
-    height:200px;
+.sprite-welcome1 {
+    width: 550px;
+    height: 200px;
+    background-position: -5px -5px;
+    background-image: url(/images/spritesheet1.png);
+    background-repeat: no-repeat;
+    display: block;
     border-radius: 3px;
-    margin: 20px;
-    padding: 0px;
-    position: relative;
-    left: 180px;
-    background:url('/images/welcome1.jpg') center top no-repeat;
+    margin: 10px;
+    &:hover {
+      width: 550px;
+      height: 200px;
+      background-position: -578px -5px;
+    }
 }
 
-#welcome_link1:hover {
-    display:block;
-    width:500px;
-    height:200px;
-    background:url('/images/welcome1_hover.jpg') center top no-repeat;
-}
-
-#welcome_link2{
-    display:block;
-    width:700px;
-    height:225px;
+.sprite-welcome2 {
+    width: 720px;
+    height: 223px;
+    background-position: -5px -5px;
+    background-image: url(/images/spritesheet2.png);
+    background-repeat: no-repeat;
+    display: block;
     border-radius: 3px;
-    margin: 30px;
-    padding: 0px;
     position: relative;
-    left: 400px;
-    background:url('/images/welcome2.jpg') center top no-repeat;
+    left: 300px;
+    margin: 10px;
+    &:hover {
+        width: 720px;
+        height: 223px;
+        background-position: -5px -238px;
+    }
 }
 
-#welcome_link2:hover {
-    display:block;
-    width:700px;
-    height:225px;
-    background:url('/images/welcome2_hover.jpg') center top no-repeat;
-}
-
-#welcome_link3{
-    display:block;
-    width:550px;
-    height:275px;
+.sprite-welcome3 {
+    width: 603px;
+    height: 231px;
+    background-position: -5px -5px;
+    background-image: url(/images/spritesheet3.png);
+    background-repeat: no-repeat;
+    display: block;
     border-radius: 3px;
-    margin: 0px;
-    padding: 0px;
     position: relative;
-    left: 250px;
-    background:url('/images/welcome3.jpg') center top no-repeat;
-}
-
-#welcome_link3:hover {
-    display:block;
-    width:550px;
-    height:275px;
-    background:url('/images/welcome3_hover.jpg') center top no-repeat;
+    left: 40px;
+    margin: 10px;
+    &:hover {
+        width: 603px;
+        height: 231px;
+        background-position: -5px -246px;
+    }
 }
 
 .post-headline {
