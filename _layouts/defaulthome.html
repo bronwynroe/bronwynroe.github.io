@@ -1,26 +1,19 @@
 ---
 layout: compress
 ---
+
 <!DOCTYPE html>
 <html>
-{% include head.html %}
-<body>
-  <header>
-      <a href="{{site.baseurl}}/"><div class="home"></div></a>
-  </header>
-  <div class="container">
-    <div>
-      <h1 class="headline">{{site.title}}</h1>
+  {% include head.html %}
+  <body>
+    <header>
+        <a href="{{site.baseurl}}/"><div class="home"></div></a>
+    </header>
+    <h1 class="headline">{{site.title}}</h1>
+    <div class="container">
+      {{ content }}
     </div>
-    {{ content }}
-  </div>
 
-
-
-<footer>
-
-</footer>
-{% include analytics.html %}
-<script src="{{site.baseurl}}/js/theme.min.js"></script>
-</body>
+  {% include analytics.html %}
+  </body>
 </html>

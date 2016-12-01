@@ -18,7 +18,6 @@ body {
         line-height: $base-line-height;
         font-size: $base-font-size;
         color: $text-color;
-        padding: 1em 1em;
         text-rendering: optimizeLegibility;
     @include media-query($on-palm) {
         max-width: 100%;
@@ -103,7 +102,7 @@ blockquote {
   text-align: right;
   font-size: 3em;
   font-family: $base-font-family;
-  padding: 0px 50px 20px 0px;
+  padding: 10px 50px 20px 0px;
       @include media-query($on-palm) {
           font-size: 2em;
   }
@@ -115,6 +114,8 @@ blockquote {
     background-position: -5px -5px;
     background-image: url(/images/spritesheet1.png);
     background-repeat: no-repeat;
+    -webkit-filter: drop-shadow(1px 1px 1px #222);
+    filter: drop-shadow(1px 1px 1px #222);
     display: block;
     border-radius: 3px;
     margin: 10px;
@@ -131,6 +132,8 @@ blockquote {
     background-position: -5px -5px;
     background-image: url(/images/spritesheet2.png);
     background-repeat: no-repeat;
+    -webkit-filter: drop-shadow(1px 1px 1px #222);
+    filter: drop-shadow(1px 1px 1px #222);
     display: block;
     border-radius: 3px;
     position: relative;
@@ -149,6 +152,8 @@ blockquote {
     background-position: -5px -5px;
     background-image: url(/images/spritesheet3.png);
     background-repeat: no-repeat;
+    -webkit-filter: drop-shadow(1px 1px 1px #222);
+    filter: drop-shadow(1px 1px 1px #222);
     display: block;
     border-radius: 3px;
     position: relative;
@@ -177,7 +182,7 @@ blockquote {
     opacity: 0.9;
     position: fixed;
     top: 50px;
-    right: 50px;
+    left: 50px;
     &:hover{
     opacity: 1;
     }
