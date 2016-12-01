@@ -10,15 +10,16 @@ html, body {
 }
 
 body {
-        max-width: $content-width;
         font-family: $base-font-family;
         margin: 0 auto;
+        padding: 0;
+        text-align: center;
         line-height: $base-line-height;
         font-size: $base-font-size;
         color: $text-color;
         padding: 2em 1em;
         text-rendering: optimizeLegibility;
-        height: 100%;
+        height: 75%;
     @include media-query($on-palm) {
         max-width: 100%;
         padding: 1em;
@@ -36,14 +37,17 @@ body {
 
 
 a {
-    color: $brand-color;
+    color: $text-color;
     text-decoration: none;
     &:hover{
-     color: $text-color;   
+     text-decoration: underline;
     }
 }
 
-
+.container {
+  max-width: 70%;
+  margin: 0 auto;
+}
 
 p a {
     color: $text-color;
@@ -96,10 +100,70 @@ blockquote {
 
 
 .headline {
-    font-size: 4em;
-        @include media-query($on-palm) {
-            font-size: 2em;
-    }
+  font-size: 3em;
+  font-family: $secondary-font-family;
+  text-align: center;
+  padding-bottom: 5px;
+      @include media-query($on-palm) {
+          font-size: 2em;
+  }
+}
+
+#welcome_link1{
+    display:block;
+    width:500px;
+    height:200px;
+    border-radius: 3px;
+    margin: 20px;
+    padding: 0px;
+    position: relative;
+    left: 180px;
+    background:url('/images/welcome1.jpg') center top no-repeat;
+}
+
+#welcome_link1:hover {
+    display:block;
+    width:500px;
+    height:200px;
+    background:url('/images/welcome1_hover.jpg') center top no-repeat;
+}
+
+#welcome_link2{
+    display:block;
+    width:700px;
+    height:225px;
+    border-radius: 3px;
+    margin: 30px;
+    padding: 0px;
+    position: relative;
+    left: 400px;
+    background:url('/images/welcome2.jpg') center top no-repeat;
+}
+
+#welcome_link2:hover {
+    display:block;
+    width:700px;
+    height:225px;
+    background:url('/images/welcome2_hover.jpg') center top no-repeat;
+}
+
+#welcome_link3{
+    display:block;
+    width:550px;
+    height:275px;
+    border-radius: 3px;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    left: 250px;
+    background:url('/images/welcome3.jpg') center top no-repeat;
+}
+
+#welcome_link3:hover {
+    display:block;
+    width:550px;
+    height:275px;
+    background:url('/images/welcome3_hover.jpg') center top no-repeat;
 }
 
 .post-headline {
@@ -111,26 +175,26 @@ blockquote {
 
 
 .home {
-    background-image: url(../images/left-arrow.svg);
+    background-image: url(../images/home.png);
     background-repeat: no-repeat;
     height: 40px;
     width: 40px;
     opacity: 0.9;
     position: fixed;
     top: 50px;
-    left: 50px;
+    right: 50px;
     &:hover{
     opacity: 1;
     }
     @include media-query($on-laptop) {
-        top: 90%;
-        left: 90%;
+        top: 25%;
+        left: 48%;
         height: 30px;
         width: 30px;
         opacity: 0.6;
     }
 
-    
+
 }
 
 .video {
@@ -141,7 +205,7 @@ blockquote {
     }
     @include media-query($on-palm) {
         height: 180px;
-    }   
+    }
 }
 
 // Adding 'Contents' headline to the TOC
@@ -180,10 +244,11 @@ footer {
     top: 2em;
 }
 
-.links a {
-    margin-right: 1em;
+.links {
+  text-align: center;
+  font-size: 2em;
+  a {
+      margin-right: 2em;
+      margin-left: 2em;
+  }
 }
-
-
-
-
