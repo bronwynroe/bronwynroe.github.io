@@ -122,13 +122,9 @@ div#nav-responsive {
   @media screen and (min-width: 825px) {
     display: none
   }
-}
-
-.nav1small {
-  background-image: url('/images/welcome1small.jpg');
-  background-repeat: no-repeat;
-  -webkit-filter: drop-shadow(1.5px 1.5px 1.5px #222);
-  filter: drop-shadow(1.5px 1.5px 1.5px #222);
+  a {
+    margin: 30px;
+  }
 }
 
 .sprite-welcome1 {
