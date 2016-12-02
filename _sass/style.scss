@@ -48,6 +48,23 @@ a {
   margin: 0 auto;
 }
 
+.biocontainer {
+  width: 30%;
+  margin: 0 auto;
+  margin-top: 5%;
+  @media screen and (max-width: 1500px) {
+    width: 40%;
+  }
+  @media screen and (max-width: 1100px) {
+    margin-top: 8%;
+    width: 50%;
+  }
+  @media screen and (max-width: 800px) {
+    margin-top: 8%;
+    width: 80%;
+  }
+}
+
 p a {
     color: $text-color;
     text-decoration: none;
@@ -127,6 +144,7 @@ div#nav-responsive {
     -webkit-filter: drop-shadow(1.5px 1.5px 1.5px #222);
     filter: drop-shadow(1.5px 1.5px 1.5px #222);
     img {
+      max-width: 100%;
       border-radius: 4px;
     }
   }
@@ -136,7 +154,7 @@ div#nav-responsive {
     width: 550px;
     height: 200px;
     background-position: -5px -5px;
-    background-image: url(/images/spritesheet1.png);
+    background-image: url(/images/welcome/spritesheet1.png);
     background-repeat: no-repeat;
     -webkit-filter: drop-shadow(1.5px 1.5px 1.5px #222);
     filter: drop-shadow(1.5px 1.5px 1.5px #222);
@@ -154,7 +172,7 @@ div#nav-responsive {
     width: 720px;
     height: 223px;
     background-position: -5px -5px;
-    background-image: url(/images/spritesheet2.png);
+    background-image: url(/images/welcome/spritesheet2.png);
     background-repeat: no-repeat;
     -webkit-filter: drop-shadow(1.5px 1.5px 1.5px #222);
     filter: drop-shadow(1.5px 1.5px 1.5px #222);
@@ -192,7 +210,7 @@ div#nav-responsive {
     width: 603px;
     height: 231px;
     background-position: -5px -5px;
-    background-image: url(/images/spritesheet3.png);
+    background-image: url(/images/welcome/spritesheet3.png);
     background-repeat: no-repeat;
     -webkit-filter: drop-shadow(1.5px 1.5px 1.5px #222);
     filter: drop-shadow(1.5px 1.5px 1.5px #222);
@@ -204,7 +222,7 @@ div#nav-responsive {
     &:hover {
         width: 603px;
         height: 231px;
-        background-position: -5px -246px;
+        background-position: -5px -245.8px;
         @media screen and (max-width: 837px) {
           width: 100%;
         }
@@ -234,15 +252,33 @@ div#nav-responsive {
     &:hover{
     opacity: 1;
     }
-    @include media-query($on-laptop) {
-        top: 25%;
-        left: 48%;
-        height: 30px;
-        width: 30px;
-        opacity: 0.6;
+}
+
+.photo-gallery {
+	list-style: none;
+	padding: 0;
+  li {
+    display: inline-block;
+  	width: 30%;
+    padding: 10px;
+    @media screen and (max-width: 750px) {
+      width: 29%;
     }
+    @media screen and (max-width: 750px) {
+      width: 27%;
+    }
+    img {
+      width: 100%;
+      border-radius: 20px;
+    }
+    p {
+      text-align: center;
+    }
+  }
+}
 
-
+div#about {
+  margin-top: 20%;
 }
 
 .video {
