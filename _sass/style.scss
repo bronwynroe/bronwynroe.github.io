@@ -283,6 +283,10 @@ div.photo-gallery {
     @media screen and (max-width: 1600px) {
       padding: 30px 50px 30px 50px;
     }
+    @media screen and (max-width: 600px) {
+      padding: 20px 0px 0px 0px;
+      margin: 0;
+    }
     img {
       padding: 20px;
       margin: 50px;
