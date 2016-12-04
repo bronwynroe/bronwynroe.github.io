@@ -245,27 +245,62 @@ div#nav-responsive {
     background-repeat: no-repeat;
     height: 120px;
     width: 120px;
+    opacity: 1;
     position: fixed;
     top: 30px;
-    left: 100px;
+    left: 50px;
+    &:hover{
+    opacity: .7;
+    }
+    @media screen and (max-width: 900px) {
+      display: none;
+    }
 }
 
-ul.photo-gallery {
-	list-style: none;
+.responsiveback {
+    background-image: url(../images/leftarrowsmall.png);
+    background-repeat: no-repeat;
+    height: 60px;
+    width: 60px;
+    opacity: 1;
+    position: fixed;
+    top: 35px;
+    left: 30px;
+    &:hover{
+    opacity: .7;
+    }
+    @media screen and (min-width: 900px) {
+      display: none;
+    }
+}
+
+div.photo-gallery {
   margin: 0;
   padding: 40px 0 0 0;
-  text-align: center;
-  li {
-    display: inline;
-    &:nth-child(odd) {
-      position: relative;
-      right: 150px;
+  div.photo {
+    padding: 30px 50px 30px 250px;
+    // background-color: aqua;
+    margin: 10px;
+    @media screen and (max-width: 1600px) {
+      // background-color: yellow;
+      padding: 30px 50px 30px 50px;
     }
-    &:nth-child(even) {
-      position: relative;
-      left: 150px;
+    img {
+      padding: 20px;
+    }
+    div.content {
+      @media screen and (max-width: 900px) {
+        padding: 0 40px 0 20px;
+      }
     }
   }
+}
+
+div.photo:nth-of-type(odd) img {
+  float: left;
+}
+div.photo:nth-of-type(even) img {
+  float: right;
 }
 
 div#about {
