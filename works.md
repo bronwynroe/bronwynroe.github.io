@@ -36,7 +36,6 @@ images:
     </div>
   {% endfor %}
 </div>
-</ul>
 
 <!-- {% for post in site.posts %}
   <h3><a href="{{post.url | prepend:site.baseurl}}">{{post.title}}</a></h3>
