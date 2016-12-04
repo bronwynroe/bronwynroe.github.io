@@ -1,13 +1,14 @@
 ### your site title here
 
 title: Bronwyn Roe
-baseurl: 
+baseurl:
 
 highlighter: rouge
 markdown: kramdown
 ### exclude the instructions / write-up in the README.md
 
-
+collections:
+- gallery
 
 # Tracker
 analytics: UA-83979019-1
