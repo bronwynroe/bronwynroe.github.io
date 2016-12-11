@@ -7,34 +7,15 @@ permalink: /works/
 <div class="photo-gallery">
   {% for painting in site.gallery %}
     <div class="photo">
-      <img id="trigger-overlay" src="{{ painting.image_path }}" alt="{{ painting.title }}">
+      <img src="{{ painting.image_path }}" alt="{{ painting.title }}">
       <div class="content">
         <h2>{{ painting.title }}</h2>
         <p>{{ painting.description }}</p>
       </div>
       <br style="clear:both">
-
-      <div class="overlay overlay-slidedown">
-      	<button type="button" class="overlay-close">Close</button>
-      	<img class="centered" src="{{ painting.image_path }}" alt="{{ painting.title }}">
-      </div>
     </div>
   {% endfor %}
 </div>
-
-<!-- <p><button id="trigger-overlay" type="button">Open Overlay</button></p>
-<div class="overlay overlay-slidedown">
-	<button type="button" class="overlay-close">Close</button>
-	<nav>
-		<ul>
-			<li><a href="#">Home</a></li>
-			<li><a href="#">About</a></li>
-			<li><a href="#">Work</a></li>
-			<li><a href="#">Clients</a></li>
-			<li><a href="#">Contact</a></li>
-		</ul>
-	</nav>
-</div> -->
 
 
 
