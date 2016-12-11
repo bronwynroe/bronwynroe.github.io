@@ -4,12 +4,20 @@ layout: defaulthome
 permalink: /contact/
 ---
 
-<div class="biocontainer">
+<div class="container" style="text-align: center;">
+  <h1>Contact Me</h1>
   <form action="https://formspree.io/misterroboto6969@gmail.com"
       method="POST">
-    <input type="text" name="name">
-    <input type="email" name="_replyto">
-    <input type="submit" value="Send">
+      <div class="contact-info-group">
+        <label><span>Your Name</span>
+        <input type="text" name="name"></label>
+        <label><span>Your Email</span>
+        <input type="email" name="_replyto"></label>
+      </div>
+      <label><span>Send Me a Message</span>
+      <textarea name="message" rows="20"></textarea>
+      <br><br>
+      <input style="width: 104%" type="submit" value="Send">
   </form>
   <!-- <br><br><br>
   <div style="text-align: center;">
