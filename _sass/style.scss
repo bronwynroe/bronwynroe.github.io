@@ -256,6 +256,10 @@ div#nav-responsive {
     @media screen and (min-width: 900px) {
       display: none;
     }
+    @media screen and (max-width: 390px) {
+      top: 110px;
+      left: 140px;
+    }
 }
 
 div.photo-gallery {
@@ -280,6 +284,10 @@ div.photo-gallery {
          padding: 0px;
          margin: 0px;
        }
+     @media screen and (max-width: 600px) {
+       padding: 20px 0px 0px 0px;
+       max-width: 100%
+     }
     }
     div.content {
       padding-top: 60px;
