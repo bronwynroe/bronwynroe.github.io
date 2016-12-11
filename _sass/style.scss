@@ -171,22 +171,16 @@ div#nav-responsive {
         height: 223px;
         background-position: -5px -238px;
     }
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 1350px) {
       left: 200px;
     }
-    @media screen and (max-width: 1100px) {
-      left: 150px;
+    @media screen and (max-width: 1230px) {
+      left: 100px;
+    }
+    @media screen and (max-width: 1071px) {
+      left: 40px;
     }
     @media screen and (max-width: 1000px) {
-      left: 80px;
-    }
-    @media screen and (max-width: 930px) {
-      left: 30px;
-    }
-    @media screen and (max-width: 870px) {
-      left: 0px;
-    }
-    @media screen and (max-width: 837px) {
       left: -10px;
     }
 }
@@ -212,7 +206,7 @@ div#nav-responsive {
           width: 100%;
         }
     }
-    @media screen and (max-width: 837px) {
+    @media screen and (max-width: 1000px) {
       left: 0px;
     }
 }
