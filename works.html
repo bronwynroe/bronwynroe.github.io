@@ -7,7 +7,7 @@ permalink: /works/
 <div class="photo-gallery">
   {% for painting in site.gallery %}
     <div class="photo">
-      <img src="{{ painting.image_path }}" alt="{{ painting.title }}">
+      <img id="trigger-overlay" src="{{ painting.image_path }}" alt="{{ painting.title }}">
       <div class="content">
         <h2>{{ painting.title }}</h2>
         <p>{{ painting.description }}</p>
@@ -16,6 +16,11 @@ permalink: /works/
     </div>
   {% endfor %}
 </div>
+
+<!-- <div class="overlay overlay-scale">
+  <button type="button" class="overlay-close">Close</button>
+  <img src="{{ painting.image_path }}" alt="{{ painting.title }}">
+</div> -->
 
 
 

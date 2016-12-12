@@ -52,9 +52,9 @@ a {
 }
 
 .biocontainer {
-  width: 40%;
+  width: 70%;
   margin: 0 auto;
-  margin-top: 5%;
+  margin-top: 8%;
   @media screen and (max-width: 1500px) {
     width: 40%;
   }
@@ -65,6 +65,9 @@ a {
   @media screen and (max-width: 800px) {
     margin-top: 8%;
     width: 80%;
+  }
+  p {
+    font-weight: normal;
   }
 }
 
@@ -260,7 +263,7 @@ div.photo-gallery {
   margin: 0;
   padding: 40px 0 0 0;
   div.photo {
-    padding: 30px 0px 30px 0px;
+    padding: 20px 0px 30px 0px;
     margin: 10px 50px 0 0;
     @media screen and (max-width: 1600px) {
       padding: 30px 50px 30px 50px;
