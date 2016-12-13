@@ -1,6 +1,6 @@
 ---
-image_path: /images/works/stock3s.jpg
-title: painting 3
+image_path: /images/works/HistoricalPerspective-small.jpg
+title: Historical Perspective
 description: Lorem ipsum dolor sit amet
 weight: 3
 ---

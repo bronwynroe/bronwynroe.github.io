@@ -1,6 +1,6 @@
 ---
-image_path: /images/works/stock4s.jpg
-title: painting 4
+image_path: /images/works/IAmLateandIDontCare-small.jpg
+title: I Am Late and I Don't Care
 description: Lorem ipsum dolor sit amet
-weight: 4
+weight: 7
 ---

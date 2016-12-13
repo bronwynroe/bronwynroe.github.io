@@ -4,8 +4,9 @@ layout: defaulthome
 permalink: /works/
 ---
 
+{% assign sorted_gallery = site.gallery | sort: 'weight' %}
 <div class="photo-gallery">
-  {% for painting in site.gallery %}
+  {% for painting in sorted_gallery %}
     <div class="photo">
       <img id="trigger-overlay" src="{{ painting.image_path }}" alt="{{ painting.title }}">
       <div class="content">

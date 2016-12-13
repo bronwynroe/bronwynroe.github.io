@@ -1,6 +1,6 @@
 ---
-image_path: /images/works/stock1s.jpg
-title: painting 1
+image_path: /images/works/ACorrelation-small.jpg
+title: A Correlation
 description: Lorem ipsum dolor sit amet
 weight: 1
 ---
