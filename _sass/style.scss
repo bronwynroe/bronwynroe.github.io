@@ -301,7 +301,10 @@ div.photo-gallery {
       @media screen and (max-width:1050px) {
          float: left;
          padding-bottom: 60px;
-       }
+      }
+      @media screen and (max-width:800px) {
+        padding: 20px 0 20px 5px;
+      }
     }
   }
 }
