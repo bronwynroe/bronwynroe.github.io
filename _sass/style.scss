@@ -26,13 +26,19 @@ body {
 
     }
 
-    h1,h2,h3,h4,h5,h6 {
-         font-family: "Lato", "Helvetica Neue", Helvetica, sans-serif;
-         font-weight: normal;
-         line-height: 1.8;
-         margin: 0;
-         text-transform: capitalize;
-    }
+h1,h2,h3,h4,h5,h6 {
+  font-family: $base-font-family;
+  font-weight: bold;
+  font-size: 1.2em;
+  line-height: 1.8;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+p, span, label {
+  font-family: $secondary-font-family;
+  font-size: 1.2em;
+}
 
 
 a {
@@ -46,6 +52,9 @@ a {
 .container {
   width: 60%;
   margin: 0 auto;
+  @media screen and (max-width: 1200px) {
+    width: 80%
+  }
   @media screen and (max-width: 600px) {
     width: 90%
   }
@@ -54,20 +63,14 @@ a {
 .biocontainer {
   width: 70%;
   margin: 0 auto;
-  margin-top: 8%;
-  @media screen and (max-width: 1500px) {
-    width: 40%;
-  }
-  @media screen and (max-width: 1100px) {
-    margin-top: 8%;
-    width: 50%;
-  }
+  margin-top: 3%;
   @media screen and (max-width: 800px) {
     margin-top: 8%;
     width: 80%;
   }
-  p {
-    font-weight: normal;
+  @media screen and (max-width: 600px) {
+    margin-top: 8%;
+    width: 95%;
   }
 }
 
@@ -323,9 +326,16 @@ form {
   max-width: 100%;
   margin: 50px auto 50px;
   input, textarea {
-    border: 2px solid black;
+    font-family: $secondary-font-family;
+    font-size: 1.5em;
+    border: 2.5px solid black;
     width: 100%;
-    padding: 10px;
+    padding: 20px 20px 20px 20px;
+    box-sizing: border-box;
+    @media screen and (max-width: 600px) {
+      font-weight: bolder;
+      font-size: 1.6em;
+    }
   }
   textarea {
     line-height: 15px;
@@ -346,6 +356,10 @@ form {
   label {
     display: block;
     margin-bottom: 10px;
+    @media screen and (max-width: 600px) {
+      font-size: .7em;
+      font-weight: bold;
+    }
     span {
       display: block;
     }
