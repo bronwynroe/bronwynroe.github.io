@@ -323,8 +323,12 @@ div.photo:nth-of-type(even) p {
 }
 
 form {
-  max-width: 100%;
-  margin: 50px auto 80px;
+  max-width: 70%;
+  margin: 20px auto;
+  @media screen and (max-width: 600px) {
+    max-width: 100%;
+    margin: 50px auto;
+  }
   input, textarea {
     font-family: $secondary-font-family;
     font-size: 1.5em;
@@ -336,9 +340,6 @@ form {
       font-weight: bolder;
       font-size: 1.6em;
     }
-  }
-  textarea {
-    line-height: 15px;
   }
   div.contact-info-group {
     padding-bottom: 120px;
