@@ -8,7 +8,7 @@ permalink: /works/
 <div class="photo-gallery">
   {% for painting in sorted_gallery %}
     <div class="photo">
-      <img id="trigger-overlay" src="{{ painting.image_path }}" alt="{{ painting.title }}">
+      <img src="{{ painting.image_path }}" alt="{{ painting.title }}">
       <div class="content">
         <h2>{{ painting.title }}</h2>
         <p>{{ painting.description }}</p>
@@ -18,9 +18,18 @@ permalink: /works/
   {% endfor %}
 </div>
 
+<p><button id="trigger-overlay" type="button">Open Overlay</button></p>
+
 <div class="overlay overlay-scale">
   <button type="button" class="overlay-close">Close</button>
-  <img src="{{ painting.image_path }}" alt="{{ painting.title }}">
+  <img src="../images/works/HistoricalPerspective.jpg" alt="something">
+</div>
+
+<p><button id="trigger-overlay1" type="button">Open Overlay</button></p>
+
+<div class="overlay1 overlay-scale">
+  <button type="button" class="overlay-close1">Close</button>
+  <img src="../images/works/IAmLateandIDontCare.jpg" alt="something">
 </div>
 
 
