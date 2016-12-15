@@ -1,14 +1,24 @@
 ---
 layout: compress
 ---
+
 <!DOCTYPE html>
 <html>
   {% include head.html %}
   <body>
-    <h1 class="headline">{{site.title}}</h1>
+    <header>
+        <a href="{{site.baseurl}}/">
+          <div class="back_arrow"></div>
+          <div class="responsiveback"></div>
+        </a>
+        <a href="{{site.baseurl}}/"><h1 class="headline">{{site.title}}</h1></a>
+    </header>
+
     <div class="container">
       {{ content }}
     </div>
   {% include analytics.html %}
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="../js/overlay.js"></script>
   </body>
 </html>

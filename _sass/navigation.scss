@@ -1,0 +1,98 @@
+div#nav-normal {
+  @media screen and (max-width: 825px) {
+    display: none
+  }
+}
+
+div#nav-responsive {
+  @media screen and (min-width: 825px) {
+    display: none
+  }
+  a.nav-responsive {
+    margin:auto;
+    -webkit-filter: drop-shadow(1.5px 1.5px 1.5px #222);
+    filter: drop-shadow(1.5px 1.5px 1.5px #222);
+    img {
+      max-width: 100%;
+      border-radius: 4px;
+    }
+  }
+}
+
+// Main Navigation - Sprites
+
+.sprite-welcome1 {
+    width: 550px;
+    height: 200px;
+    background-position: -5px -5px;
+    background-image: url(/images/welcome/spritesheet1.png);
+    background-repeat: no-repeat;
+    -webkit-filter: drop-shadow(1.5px 1.5px 1.5px #222);
+    filter: drop-shadow(1.5px 1.5px 1.5px #222);
+    display: block;
+    border-radius: 5px;
+    margin: 10px;
+    &:hover {
+      width: 550px;
+      height: 200px;
+      background-position: -578px -5px;
+    }
+}
+
+.sprite-welcome2 {
+    width: 720px;
+    height: 223px;
+    background-position: -5px -5px;
+    background-image: url(/images/welcome/spritesheet2.png);
+    background-repeat: no-repeat;
+    -webkit-filter: drop-shadow(1.5px 1.5px 1.5px #222);
+    filter: drop-shadow(1.5px 1.5px 1.5px #222);
+    display: block;
+    border-radius: 5px;
+    position: relative;
+    left: 300px;
+    margin: 20px;
+    &:hover {
+        width: 720px;
+        height: 223px;
+        background-position: -5px -238px;
+    }
+    @media screen and (max-width: 1350px) {
+      left: 200px;
+    }
+    @media screen and (max-width: 1230px) {
+      left: 100px;
+    }
+    @media screen and (max-width: 1071px) {
+      left: 40px;
+    }
+    @media screen and (max-width: 1000px) {
+      left: -10px;
+    }
+}
+
+.sprite-welcome3 {
+    width: 603px;
+    height: 231px;
+    background-position: -5px -5px;
+    background-image: url(/images/welcome/spritesheet3.png);
+    background-repeat: no-repeat;
+    -webkit-filter: drop-shadow(1.5px 1.5px 1.5px #222);
+    filter: drop-shadow(1.5px 1.5px 1.5px #222);
+    display: block;
+    border-radius: 5px;
+    position: relative;
+    left: 40px;
+    margin: 10px;
+    &:hover {
+        width: 603px;
+        height: 231px;
+        background-position: -5px -245.8px;
+        @media screen and (max-width: 837px) {
+          width: 100%;
+        }
+    }
+    @media screen and (max-width: 1000px) {
+      left: 0px;
+    }
+}
