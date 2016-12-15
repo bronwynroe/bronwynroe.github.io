@@ -1,21 +1,21 @@
 html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-        font-family: $base-font-family;
-        margin: 0;
-        padding: 0;
-        line-height: $base-line-height;
-        font-size: $base-font-size;
-        color: $text-color;
-        text-rendering: optimizeLegibility;
+    font-family: $base-font-family;
+    margin: 0;
+    padding: 0;
+    line-height: $base-line-height;
+    font-size: $base-font-size;
+    color: $text-color;
+    text-rendering: optimizeLegibility;
     @include media-query($on-palm) {
-        max-width: 100%;
-        padding: 1em;
-    }
+      max-width: 100%;
+      padding: 1em;
+  }
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -46,8 +46,14 @@ a {
 .container {
   width: 55%;
   margin: 0 auto;
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1400px) {
+    width: 65%
+  }
+  @media screen and (max-width: 1350px) {
     width: 80%
+  }
+  @media screen and (max-width: 1050px) {
+    width: 90%
   }
   @media screen and (max-width: 600px) {
     width: 95%
@@ -75,10 +81,10 @@ a {
   font-size: 3em;
   font-weight: normal;
   font-family: $base-font-family;
-  padding: 30px 80px 0px 0px;
+  padding: 5px 80px 0px 0px;
       @media screen and (max-width: 837px) {
         text-align: center;
-        padding: 10px 0px 20px 0px;
+        padding: 5px 0px 20px 0px;
       }
       @include media-query($on-palm) {
         font-size: 2em;
@@ -93,7 +99,7 @@ a {
     width: 120px;
     opacity: 1;
     position: fixed;
-    top: 30px;
+    top: 5px;
     left: 50px;
     &:hover{
     opacity: 1;

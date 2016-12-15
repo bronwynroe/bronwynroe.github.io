@@ -27,10 +27,20 @@ div.photo-gallery {
      }
     }
     div.content {
-      padding-top: 60px;
+      @media screen and (min-width:1050px) {
+         padding-top: 400px;
+      }
+      h6,h5,h4,h3,h2,h1,p {
+        font-size: 1.1em;
+        padding: 0px;
+        margin: 0px;
+      }
       @media screen and (max-width:1050px) {
          float: left;
          padding-bottom: 60px;
+      }
+      @media screen and (max-width:1050px) {
+         padding: 20px 0 20px 30px;
       }
       @media screen and (max-width:800px) {
         padding: 20px 0 20px 5px;
