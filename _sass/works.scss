@@ -8,20 +8,8 @@ div.photo-gallery {
       padding: 30px 50px 30px 50px;
     }
     @media screen and (max-width: 1000px) {
-      width: 50%;
+      width: 90%;
       padding: 30px 0px 30px 0px;
-      margin: 0 auto;
-    }
-    @media screen and (max-width: 600px) {
-      padding: 20px 0px 0px 0px;
-      width: 100%;
-      max-width: 100%;
-      margin: 0 75% 0 10%;
-    }
-    @media screen and (max-width: 440px) {
-      padding: 20px 0px 0px 0px;
-      width: 100%;
-      max-width: 100%;
       margin: 0 auto;
     }
     img {
@@ -35,6 +23,10 @@ div.photo-gallery {
          margin: 20px;
        }
      @media screen and (max-width: 800px) {
+       padding: 20px 0px 0px 0px;
+       margin: 0px;
+     }
+     @media screen and (max-width: 425px) {
        padding: 20px 0px 0px 0px;
        margin: 0px;
        max-width: 100%;
