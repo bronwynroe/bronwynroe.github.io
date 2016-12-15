@@ -46,13 +46,16 @@ a {
 .container {
   width: 55%;
   margin: 0 auto;
-  @media screen and (max-width: 1400px) {
+  @media screen and (max-width: 1450px) {
     width: 65%
   }
   @media screen and (max-width: 1350px) {
-    width: 80%
+    width: 85%
   }
   @media screen and (max-width: 1050px) {
+    width: 90%
+  }
+  @media screen and (max-width: 800px) {
     width: 90%
   }
   @media screen and (max-width: 600px) {

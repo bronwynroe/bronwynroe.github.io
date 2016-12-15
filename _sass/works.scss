@@ -1,15 +1,28 @@
 div.photo-gallery {
-  margin: 0;
+  margin: 0 auto;
   padding: 40px 0 0 0;
   div.photo {
     padding: 20px 0px 30px 0px;
-    margin: 10px 50px 0 0;
+    margin: 0 auto;
     @media screen and (max-width: 1600px) {
       padding: 30px 50px 30px 50px;
     }
+    @media screen and (max-width: 1000px) {
+      width: 50%;
+      padding: 30px 0px 30px 0px;
+      margin: 0 auto;
+    }
     @media screen and (max-width: 600px) {
       padding: 20px 0px 0px 0px;
-      margin: 0;
+      width: 100%;
+      max-width: 100%;
+      margin: 0 75% 0 10%;
+    }
+    @media screen and (max-width: 440px) {
+      padding: 20px 0px 0px 0px;
+      width: 100%;
+      max-width: 100%;
+      margin: 0 auto;
     }
     img {
       padding: 10px;
@@ -19,11 +32,12 @@ div.photo-gallery {
       filter: drop-shadow(2px 2px 2px #222);
       @media screen and (max-width:1050px) {
          padding: 0px;
-         margin: 0px;
+         margin: 20px;
        }
-     @media screen and (max-width: 600px) {
+     @media screen and (max-width: 800px) {
        padding: 20px 0px 0px 0px;
-       max-width: 100%
+       margin: 0px;
+       max-width: 100%;
      }
     }
     div.content {
@@ -36,14 +50,12 @@ div.photo-gallery {
         margin: 0px;
       }
       @media screen and (max-width:1050px) {
-         float: left;
-         padding-bottom: 60px;
-      }
-      @media screen and (max-width:1050px) {
-         padding: 20px 0 20px 30px;
+         padding: 20px 0 20px 20px;
       }
       @media screen and (max-width:800px) {
-        padding: 20px 0 20px 5px;
+         padding: 20px 0 20px 0px;
+         float: left;
+         padding-bottom: 60px;
       }
     }
   }
@@ -54,20 +66,20 @@ div.photo:nth-of-type(odd) img {
 }
 div.photo:nth-of-type(even) img {
   float: right;
-  @media screen and (max-width:1050px) {
+  @media screen and (max-width:1000px) {
      float: left;
   }
 }
 
 div.photo:nth-of-type(even) h2 {
   text-align: right;
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 1000px) {
     text-align: left
   }
 }
 div.photo:nth-of-type(even) p {
   text-align: right;
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 1000px) {
     text-align: left
   }
 }
