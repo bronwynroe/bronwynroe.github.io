@@ -1,7 +1,8 @@
 ---
-small_path: /images/works/InsideVoice-small.jpg
-main_path: /images/works/InsideVoice.jpg
+small_path: /images/works/inside_voice_small.jpg
+main_path: /images/works/inside_voice.jpg
 title: Inside Voice
-description: Lorem ipsum dolor sit amet
-weight: 5
+description: Watercolor on paper
+dimensions: 23" X 15"
+weight: 1
 ---
