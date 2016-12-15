@@ -8,7 +8,7 @@ permalink: /works/
 <div class="photo-gallery">
   {% for painting in sorted_gallery %}
     <div class="photo">
-      <img src="{{ painting.small_path }}" alt="{{ painting.title }}">
+      <img class="joel-overlay" style="cursor: zoom-in;" src="{{ painting.small_path }}" alt="{{ painting.title }}">
       <div class="content">
         <h2>{{ painting.title }}</h2>
         <p>{{ painting.description }}</p>
@@ -18,24 +18,9 @@ permalink: /works/
   {% endfor %}
 </div>
 
-<!-- Test -->
+<!-- This is a hidden div on load -->
 
-<p><button id="trigger-overlay" type="button">Open Overlay 1</button></p>
-
-<div class="overlay overlay-scale">
+<div class="overlay" style="display:none;">
   <button type="button" class="overlay-close">Close</button>
-  <img src="../images/works/HistoricalPerspective.jpg" alt="something">
+  <img class="clickpic" src="" alt="something">
 </div>
-
-<p><button id="trigger-overlay1" type="button">Open Overlay 2</button></p>
-
-<div class="overlay1 overlay-scale">
-  <button type="button" class="overlay-close1">Close</button>
-  <img src="../images/works/IAmLateandIDontCare.jpg" alt="something">
-</div>
-
-
-
-<!-- {% for post in site.posts %}
-  <h3><a href="{{post.url | prepend:site.baseurl}}">{{post.title}}</a></h3>
-{% endfor %} -->
