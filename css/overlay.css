@@ -23,32 +23,3 @@
 	outline: none;
 	z-index: 100;
 }
-
-/* Effects */
-.overlay-scale {
-	visibility: hidden;
-	opacity: 0;
-	-webkit-transform: scale(0.9);
-	transform: scale(0.9);
-	-webkit-transition: -webkit-transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
-	transition: transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
-}
-
-.overlay-scale.open {
-	visibility: visible;
-	opacity: 1;
-	-webkit-transform: scale(1);
-	transform: scale(1);
-	-webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
-	transition: transform 0.4s, opacity 0.4s;
-}
-
-@media screen and (max-height: 30.5em) {
-	.overlay nav {
-		height: 70%;
-		font-size: 34px;
-	}
-	.overlay ul li {
-		min-height: 34px;
-	}
-}

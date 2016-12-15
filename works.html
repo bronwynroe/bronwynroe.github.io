@@ -8,7 +8,7 @@ permalink: /works/
 <div class="photo-gallery">
   {% for painting in sorted_gallery %}
     <div class="photo">
-      <img class="joel-overlay" style="cursor: zoom-in;" src="{{ painting.small_path }}" alt="{{ painting.title }}">
+      <img class="open-overlay" src="{{ painting.small_path }}" alt="{{ painting.title }}">
       <div class="content">
         <h2>{{ painting.title }}</h2>
         <p>{{ painting.description }}</p>
@@ -20,7 +20,7 @@ permalink: /works/
 
 <!-- This is a hidden div on load -->
 
-<div class="overlay" style="display:none;">
+<div class="overlay" style="display:none; text-align: center;" >
   <button type="button" class="overlay-close">Close</button>
   <img class="clickpic" src="" alt="something">
 </div>

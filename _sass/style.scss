@@ -285,6 +285,7 @@ div.photo-gallery {
     img {
       padding: 10px;
       margin: 30px;
+      cursor: zoom-in;
       -webkit-filter: drop-shadow(2px 2px 2px #222);
       filter: drop-shadow(2px 2px 2px #222);
       @media screen and (max-width:1050px) {
