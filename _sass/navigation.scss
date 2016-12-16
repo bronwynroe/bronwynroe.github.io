@@ -1,11 +1,11 @@
 div#nav-normal {
-  @media screen and (max-width: 930px) {
+  @media screen and (max-width: 900px) {
     display: none
   }
 }
 
 div#nav-responsive {
-  @media screen and (min-width: 930px) {
+  @media screen and (min-width: 900px) {
     display: none
   }
   a.nav-responsive {
@@ -99,6 +99,9 @@ div#nav-responsive {
     }
     @media screen and (max-width: 950px) {
       left: 50px;
+    }
+    @media screen and (max-width: 920px) {
+      left: 35px;
     }
 }
 
