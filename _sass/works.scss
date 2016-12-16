@@ -36,6 +36,9 @@ div.photo-gallery {
         font-size: 1.1em;
         padding: 0px;
         margin: 0px;
+        @media screen and (max-width:500px) {
+           font-size: .9em;
+        }
       }
       @media screen and (min-width:850px) {
          padding-top: 410px;
