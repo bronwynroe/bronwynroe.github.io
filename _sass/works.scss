@@ -1,53 +1,54 @@
 div.photo-gallery {
   margin: 0 auto;
   padding: 40px 0 0 0;
+  @media screen and (max-width: 850px) {
+    width: 60%;
+    padding: 0;
+  }
+  @media screen and (max-width: 500px) {
+    width: 80%;
+    padding: 0;
+  }
   div.photo {
     padding: 20px 0px 30px 0px;
-    margin: 0 auto;
-    @media screen and (max-width: 1600px) {
-      padding: 30px 50px 30px 50px;
-    }
-    @media screen and (max-width: 1000px) {
-      width: 90%;
-      padding: 30px 0px 30px 0px;
-      margin: 0 auto;
+    @media screen and (max-width: 850px) {
+      padding: 0;
+      margin: 0;
     }
     img {
       padding: 10px;
-      margin: 30px;
+      margin: 20px;
       cursor: zoom-in;
       -webkit-filter: drop-shadow(2px 2px 2px #222);
       filter: drop-shadow(2px 2px 2px #222);
-      @media screen and (max-width:1050px) {
-         padding: 0px;
-         margin: 20px;
+      @media screen and (max-width:850px) {
+        margin: 0 auto;
+        max-width: 100%;
+      }
+       @media screen and (max-width:600px) {
+         padding: 20px 0px 20px 0px;
+         margin: 0px;
+         max-width: 100%;
        }
-     @media screen and (max-width: 800px) {
-       padding: 20px 0px 0px 0px;
-       margin: 0px;
-     }
-     @media screen and (max-width: 425px) {
-       padding: 20px 0px 0px 0px;
-       margin: 0px;
-       max-width: 100%;
-     }
     }
     div.content {
-      @media screen and (min-width:1050px) {
-         padding-top: 400px;
-      }
       h6,h5,h4,h3,h2,h1,p {
         font-size: 1.1em;
         padding: 0px;
         margin: 0px;
       }
-      @media screen and (max-width:1050px) {
-         padding: 20px 0 20px 20px;
+      @media screen and (min-width:850px) {
+         padding-top: 410px;
       }
-      @media screen and (max-width:800px) {
-         padding: 20px 0 20px 0px;
-         float: left;
+      @media screen and (max-width:850px) {
+         padding: 5px 0 20px 10px;
          padding-bottom: 60px;
+         clear: left;
+         display: block;
+      }
+      @media screen and (max-width:600px) {
+        padding: 0px 0 20px 0px;
+        max-width: 100%;
       }
     }
   }
@@ -55,11 +56,17 @@ div.photo-gallery {
 
 div.photo:nth-of-type(odd) img {
   float: left;
+  @media screen and (max-width:850px) {
+     float: none;
+  }
 }
 div.photo:nth-of-type(even) img {
   float: right;
   @media screen and (max-width:1000px) {
      float: left;
+  }
+  @media screen and (max-width:850px) {
+     float: none;
   }
 }
 
