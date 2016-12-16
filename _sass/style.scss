@@ -50,7 +50,7 @@ a {
     width: 65%
   }
   @media screen and (max-width: 1050px) {
-    width: 80%
+    width: 75%
   }
   @media screen and (max-width: 600px) {
     width: 95%
@@ -83,14 +83,20 @@ a {
         text-align: center;
         padding: 0;
       }
-      @include media-query($on-palm) {
+      @include media-query(500px) {
+        font-size: 2.5em;
+      }
+      @include media-query(400px) {
         font-size: 2em;
+      }
+      @include media-query(300px) {
+        font-size: 1.8em;
       }
 }
 
 
 .back_arrow {
-    background-image: url(../images/leftarrow.png);
+    background-image: url(../images/icons/leftarrow.png);
     background-repeat: no-repeat;
     height: 120px;
     width: 120px;
@@ -112,7 +118,7 @@ a {
 }
 
 .responsiveback {
-    background-image: url(../images/leftarrowsmall.png);
+    background-image: url(../images/icons/leftarrowsmall.png);
     background-repeat: no-repeat;
     height: 60px;
     width: 60px;
