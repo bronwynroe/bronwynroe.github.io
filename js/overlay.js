@@ -8,4 +8,8 @@ $(document).ready(function() {
     $("div.overlay").fadeOut(500);
     $("img.clickpic").attr("src", "")
   });
+  $(document).on('click', 'div.overlay', function() {
+    $("div.overlay").fadeOut(500);
+    $("img.clickpic").attr("src", "")
+  });
 });
