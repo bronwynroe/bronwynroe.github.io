@@ -25,6 +25,9 @@ form {
     &:hover {
       background-color: $grey-color-light;
     }
+    @media screen and (max-width: 630px) {
+      font-size: 1.1em;
+    }
   }
   input::-moz-focus-inner {
     border: 0;
