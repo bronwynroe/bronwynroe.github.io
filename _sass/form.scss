@@ -15,7 +15,8 @@ form {
     border-radius: 2px;
     @media screen and (max-width: 630px) {
       font-weight: bolder;
-      font-size: 1.6em;
+      font-size: .8em;
+      padding: 10px 10px 10px 10px;
     }
   }
   input#submit {
@@ -30,6 +31,9 @@ form {
   }
   div.contact-info-group {
     padding-bottom: 120px;
+    @media screen and (max-width: 630px) {
+      padding-bottom: 40px;
+    }
     label {
       width: 45%;
       float: left;
