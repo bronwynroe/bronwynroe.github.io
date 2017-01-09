@@ -1,8 +1,8 @@
 form {
-  max-width: 70%;
   margin: 50px auto;
+  max-width: 70%;
   text-align: center;
-  @media screen and (max-width: 630px) {
+  @media screen and (max-width: 900px) {
     max-width: 100%;
   }
   input, textarea {
@@ -20,6 +20,7 @@ form {
   }
   input#submit {
     background-color: #fff;
+    font-weight: 700;
     &:hover {
       background-color: $grey-color-light;
     }
@@ -43,9 +44,11 @@ form {
   label {
     display: block;
     margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 1.4em;
     @media screen and (max-width: 630px) {
-      font-size: .7em;
-      font-weight: bold;
+      font-size: 1.3em;
+      font-weight: bolder;
     }
     span {
       display: block;
