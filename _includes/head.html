@@ -1,10 +1,24 @@
 <head>
+  <!-- General Meta -->
   <meta content="IE=edge" http-equiv="X-UA-Compatible" />
   <meta charset="utf-8" />
   <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport" />
 
+  <!-- Search Engine -->
   <meta name="description" content="{{ site.description }}">
-  <meta name="image" content="http://pjmaskslive.com/images/preview.jpg" />
+
+  <!-- Schema.org (Google) -->
+  <meta itemprop="name" content="{{ site.title }}" />
+  <meta itemprop="description" content="{{ site.description }}" />
+
+  <!-- Open Graph (Facebook, Pinterest & Google+) -->
+  <meta name="og:title" content="{{ site.title }}" />
+  <meta name="og:description" content={{ site.description }} />
+  <meta name="og:url" content="{{ site.url }}" />
+  <meta name="og:site_name" content="{{ site.title }}" />
+  <meta name="og:locale" content="en_US" />
+  <meta name="og:type" content="website" />
+
 
   <link rel="stylesheet" href="{{site.baseurl}}/css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Raleway" rel="stylesheet">
