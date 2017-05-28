@@ -52,7 +52,7 @@ a {
     width: 75%
   }
   @media screen and (max-width: 600px) {
-    width: 85%
+    width: 100%
   }
 }
 
@@ -131,7 +131,7 @@ a {
     @media screen and (min-width: 850px) {
       display: none;
     }
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 600px) {
       position: static;
       margin: 0 auto;
     }
